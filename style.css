@@ -177,6 +177,52 @@ text-align: center;
     color:white;
 }
 
+@media(max-width: 500px) {
+
+    .grid,
+    .showcase .grid,
+    .stats .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .card{
+        width: 350px;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+        
+    }
+
+    .navbar {
+        height:110px
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+
+
+}
+
+
 /* Animations */
 
 @keyframes slideInFromLeft {
@@ -226,6 +272,30 @@ text-align: center;
     margin: 10px;
 
 }
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px #fff solid;
+}
+
+.btn-card {
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+
 
 /* Defaults */
 .flex{
